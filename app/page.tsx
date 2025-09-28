@@ -20,8 +20,8 @@ export default function Home() {
               Full-Stack Developer (React + Node.js)
             </h1>
             <p className="mt-4 text-gray-600 dark:text-gray-300">
-              I build fast, scalable, and well-designed apps. Experience with Next.js, NestJS,
-              GraphQL, Prisma, and deployments on Vercel/AWS. I focus on DX, performance, and best practices.
+              I build fast, scalable, and well-designed apps. Experience with Next.js, NestJS, GraphQL, Prisma, and
+              deployments on Vercel/AWS. I focus on DX, performance, and best practices.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <a
@@ -30,12 +30,7 @@ export default function Home() {
               >
                 View projects
               </a>
-              <a
-                href="mailto:your-email@example.com"
-                className="inline-flex items-center justify-center rounded-xl px-4 py-2.5 border border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800"
-              >
-                Let's talk
-              </a>
+
             </div>
 
             {/* Skills */}
@@ -81,11 +76,11 @@ export default function Home() {
           </div>
           <div className="md:col-span-2 text-gray-700 dark:text-gray-300 leading-relaxed">
             <p>
-              I'm a full-stack developer with a focus on clean architecture, testing, and performance.
+              I&apos;m a full-stack developer with a focus on clean architecture, testing, and performance.
               I enjoy working with product teams, designing clear APIs, and automating CI/CD.
             </p>
             <p className="mt-4">
-              Lately, I've been building real-time dashboards, IoT integrations (MQTT + GraphQL Subscriptions),
+              Lately, I&apos;ve been building real-time dashboards, IoT integrations (MQTT + GraphQL Subscriptions),
               and e-commerce systems (Cart) with Next.js + NestJS.
             </p>
           </div>
@@ -157,11 +152,11 @@ export default function Home() {
             </div>
             <div className="md:col-span-2">
               <p className="text-gray-700 dark:text-gray-300">
-                Interested in collaborating or have an idea? Write to me and let's talk.
+                Interested in collaborating or have an idea? Write to me and let&apos;s talk.
               </p>
               <div className="mt-5 flex flex-wrap gap-3">
                 <a
-                  href="mailto:your-email@example.com"
+                  href="mailto:hugo.chaves.vasquez@gmail.com"
                   className="inline-flex items-center justify-center rounded-xl px-4 py-2.5 bg-gray-900 text-white dark:bg-white dark:text-gray-900 hover:opacity-90"
                 >
                   Send email
