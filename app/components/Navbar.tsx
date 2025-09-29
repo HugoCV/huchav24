@@ -10,9 +10,8 @@ export default function Navbar() {
           <span className="font-semibold tracking-tight">Hugo Chaves Vásquez</span>
         </Link>
         <ul className="hidden sm:flex items-center gap-6 text-sm">
-          <li><a href="#about" className="hover:opacity-80">About me</a></li>
-          <li><a href="#projects" className="hover:opacity-80">Projects</a></li>
-          <li><a href="#contact" className="hover:opacity-80">Contact</a></li>
+          <li><Link href="/focus-areas" className="hover:opacity-80">Focus Areas</Link></li>
+          <li><Link href="/contact" className="hover:opacity-80">Contact</Link></li>
         </ul>
         <div className="flex items-center gap-2">
           <a
