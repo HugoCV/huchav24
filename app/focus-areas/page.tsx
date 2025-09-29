@@ -17,28 +17,36 @@ export default function FocusAreasPage() {
           Machine Learning & AI
         </h2>
         <p className="mt-2 text-gray-600 dark:text-gray-300">
-          Exploring the world of AI, with a special interest in Reinforcement
-          Learning. Here is a short demonstration of an agent I trained for a
-          simple game.
+          Exploring the world of AI, with a special interest in Reinforcement Learning.
+          Here is a comparison of an agent at two different stages of its training,
+          showing the improvement in its strategy.
         </p>
 
-        <div className="mt-6 overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm dark:border-gray-800 dark:bg-gray-950">
-          <video
-            src="/rl-video-episode-1.mp4"
-            className="h-auto w-full"
-            controls
-            autoPlay
-            muted
-            loop
-            playsInline
-          >
-            Your browser does not support the video tag.
-          </video>
+        {/* Video Comparison Grid */}
+        <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2">
+          <div>
+            <div className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm dark:border-gray-800 dark:bg-gray-950">
+              <video src="/rl-video-episode-1.mp4" className="h-auto w-full" controls autoPlay muted loop playsInline>
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <p className="mt-2 text-center text-xs text-gray-500 dark:text-gray-400">
+              Early training stage
+            </p>
+          </div>
+          <div>
+            <div className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm dark:border-gray-800 dark:bg-gray-950">
+              <video src="/rl-video-episode-2.mp4" className="h-auto w-full" controls autoPlay muted loop playsInline>
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <p className="mt-2 text-center text-xs text-gray-500 dark:text-gray-400">
+              After some training
+            </p>
+          </div>
         </div>
-        <p className="mt-2 text-xs text-gray-500 dark:text-gray-400">
-          Demo: A Reinforcement Learning agent in a custom environment.
-        </p>
-        <div className="mt-4">
+
+        <div className="mt-6 text-center">
           <a
             href="https://colab.research.google.com/drive/1pus5XIhGGnB0tLFqJhq4FFonACKCUMLy#scrollTo=U1qVvfzOM-72"
             target="_blank"
