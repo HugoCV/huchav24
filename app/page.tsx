@@ -23,7 +23,7 @@ export default function Home() {
   ];
 
   return (
-    <section className="mx-auto max-w-6xl px-4 pt-5 pb-5 sm:pt-20 sm:pb-16">
+    <section className="mx-auto max-w-6xl px-4 sm:pt-20 sm:pb-16">
       <div className="grid items-center gap-10 md:grid-cols-2">
         {/* LEFT */}
         <div>
