@@ -8,7 +8,7 @@ export default function FocusAreasPage() {
         Focus Areas
       </h1>
       <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">
-        These are some of the areas where I'm currently focusing my learning and
+        These are some of the areas where I&apos;m currently focusing my learning and
         development.
       </p>
 
