@@ -6,7 +6,7 @@ export default function ContactPage() {
       icon: <Mail className="w-8 h-8" />,
       title: "Email",
       description: "The best way to reach me. I'll get back to you as soon as possible.",
-      href: "mailto:hugo.chaves.vasquez@gmail.com",
+      href: "mailto:huchav24@gmail.com",
       cta: "Send Email",
     },
     {

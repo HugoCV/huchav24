@@ -1,37 +1,110 @@
-export default function FocusAreasPage() {
-  const focusAreas = [
-    {
-      title: "Frontend Development",
-      description:
-        "Building responsive and performant user interfaces with React, Next.js, and Tailwind CSS. I focus on creating great user experiences and maintaining a clean and scalable codebase.",
-    },
-    {
-      title: "Backend Development",
-      description:
-        "Designing and implementing robust and scalable server-side applications with Node.js and NestJS. I have experience with RESTful APIs, GraphQL, and database management with Prisma and PostgreSQL.",
-    },
-    {
-      title: "DevOps & Deployment",
-      description:
-        "Automating CI/CD pipelines and deploying applications to cloud platforms like Vercel and AWS. I&apos;m passionate about infrastructure as code and ensuring high availability and performance.",
-    },
-    {
-      title: "Clean Architecture & Best Practices",
-      description:
-        "Applying principles of clean architecture, domain-driven design, and test-driven development to build maintainable and high-quality software. I believe in writing code that is easy to understand and evolve.",
-    },
-  ];
+import { PlayCircle } from "lucide-react";
+import Image from "next/image";
 
+export default function FocusAreasPage() {
   return (
-    <section id="focus-areas" className="mx-auto max-w-6xl px-4 py-12 sm:py-16">
-      <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-10">Focus Areas</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-        {focusAreas.map((area) => (
-          <div key={area.title}>
-            <h3 className="text-lg font-semibold">{area.title}</h3>
-            <p className="mt-2 text-gray-700 dark:text-gray-300 leading-relaxed">{area.description}</p>
-          </div>
-        ))}
+    <section className="mx-auto max-w-3xl px-4 py-14 sm:py-20 text-center">
+      <h1 className="text-3xl font-extrabold tracking-tight sm:text-5xl">
+        Focus Areas
+      </h1>
+      <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">
+        These are some of the areas where I'm currently focusing my learning and
+        development.
+      </p>
+
+      <div className="mt-12 text-left">
+        <h2 className="text-2xl font-bold tracking-tight">
+          Machine Learning & AI
+        </h2>
+        <p className="mt-2 text-gray-600 dark:text-gray-300">
+          Exploring the world of AI, with a special interest in Reinforcement
+          Learning. Here is a short demonstration of an agent I trained for a
+          simple game.
+        </p>
+
+        <div className="mt-6 overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm dark:border-gray-800 dark:bg-gray-950">
+          <video
+            src="/rl-video-episode-1.mp4"
+            className="h-auto w-full"
+            controls
+            autoPlay
+            muted
+            loop
+            playsInline
+          >
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <p className="mt-2 text-xs text-gray-500 dark:text-gray-400">
+          Demo: A Reinforcement Learning agent in a custom environment.
+        </p>
+        <div className="mt-4">
+          <a
+            href="https://colab.research.google.com/drive/1pus5XIhGGnB0tLFqJhq4FFonACKCUMLy#scrollTo=U1qVvfzOM-72"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-md bg-gray-100 px-4 py-2 text-sm font-semibold text-gray-800 shadow-sm hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-200 dark:hover:bg-gray-700"
+          >
+            <PlayCircle className="h-4 w-4" />
+            Run example in Colab
+          </a>
+        </div>
+      </div>
+
+      {/* Gradient Descent Section */}
+      <div className="mt-16 text-left">
+        <h2 className="text-2xl font-bold tracking-tight">
+          Optimization Algorithms
+        </h2>
+        <p className="mt-2 text-gray-600 dark:text-gray-300">
+          Understanding the fundamentals of how models learn is key. Here is a
+          visualization of the Gradient Descent algorithm finding the minimum of
+          a function.
+        </p>
+
+        <div className="mt-6 overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm dark:border-gray-800 dark:bg-gray-950">
+          <Image
+            src="/gradient-decent.png"
+            alt="Gradient Descent Visualization"
+            width={1200}
+            height={750}
+            className="h-auto w-full"
+          />
+        </div>
+        <div className="mt-4">
+          <a
+            href="https://colab.research.google.com/drive/1BR2XQDJrxQom5dMbq6qavwyESKuo7nLJ#scrollTo=FLvBJSCFMxC_"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-md bg-gray-100 px-4 py-2 text-sm font-semibold text-gray-800 shadow-sm hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-200 dark:hover:bg-gray-700"
+          >
+            <PlayCircle className="h-4 w-4" />
+            Run example in Colab
+          </a>
+        </div>
+      </div>
+
+      {/* IoT Section */}
+      <div className="mt-16 text-left">
+        <h2 className="text-2xl font-bold tracking-tight">
+          Internet of Things (IoT)
+        </h2>
+        <p className="mt-2 text-gray-600 dark:text-gray-300">
+          Building connected devices and systems. Exploring hardware
+          programming with platforms like ESP32 and integrating them with
+          modern web services.
+        </p>
+
+        <div className="mt-6 overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm dark:border-gray-800 dark:bg-gray-950">
+          <Image
+            src="/iot.jpg"
+            alt="IoT Project"
+            width={1200}
+            height={750}
+            className="h-auto w-full"
+          />
+        </div>
+        {/* If you have a link for this project, you can add it here */}
       </div>
     </section>
   );
